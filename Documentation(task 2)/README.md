@@ -1,20 +1,21 @@
 ## DOCUMENTATION
 
 **Object Model For Nudge**  
-{  
-  "_id": "ObjectId",            // Unique identifier for the nudge (MongoDB ObjectId)  
-  "event_id": "ObjectId",        // Reference to the event this nudge is associated with (MongoDB ObjectId)  
-  "title": "string",             // Title of the nudge    
-  "image": "string",             // Image file   
-  "schedule": "date",            // Date and time when the nudge should be sent  
-  "timing": {  
-    "from": "string",            // Start time for the nudge (format: hh:mm)  
-    "to": "string"               // End time for the nudge (format: hh:mm)  
-  },  
-  "description": "string",       // Description of the nudge  
-  "icon": "string",              // Icon for the minimized nudge view  
-  "invitation": "string"         // One-line invitation message  
-}  
+```json
+{
+  "_id": "ObjectId",            // Unique identifier for the nudge (MongoDB ObjectId)
+  "event_id": "ObjectId",        // Reference to the event this nudge is associated with (MongoDB ObjectId)
+  "title": "string",             // Title of the nudge
+  "image": "string",             // Image file
+  "schedule": "date",            // Date and time when the nudge should be sent
+  "timing": {
+    "from": "string",            // Start time for the nudge (format: hh:mm)
+    "to": "string"               // End time for the nudge (format: hh:mm)
+  },
+  "description": "string",       // Description of the nudge
+  "icon": "string",              // Icon for the minimized nudge view
+  "invitation": "string"         // One-line invitation message
+}
   
 **API DOCUMENTATION**  
 Base url : http://localhost:3000/apiendpoint
