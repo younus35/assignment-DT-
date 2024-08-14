@@ -22,33 +22,38 @@ Base url : http://localhost:3000/apiendpoint
   
 >there was nothing about reading, updating and deleting nudge but i am adding as an extra.  
   
-API ENDPOINT:  
- 1.Create Nudge  
-   * Endpoint: '/nudge'  
-   * Method: POST  
-   * Description: Create a new nudge for an event  
-   * Payload: same as the object model above except the _id  
-   * Response: Id of the created nudge or an error  
- 2.Get Nudge  
-   * Endpoint: '/nudge/:id'  
-   * Method: GET  
-   * Description: Retrieve details of a specific nudge by its ID.  
-   * Payload:  
-   * Response: same as the object model above or an error    
- 3.Update Nudge    
-   * Endpoint: '/nudge/:id'  
-   * Method: PUT  
-   * Description: Update an existing nudge by its ID.  
-   * Payload: (Same as the Create Nudge payload)   
-   * Response: message as nudge updated successfully or an error    
- 4.Delete Nudge  
-   * Endpoint: '/nudge/:id'  
-   * Method: DELETE  
-   * Description: Delete a nudge by its ID.    
-   * Payload:     
-   * Response: message as nudge deleted successfully or an error  
+API ENDPOINT:
+
+1. **Create Nudge**
+   * Endpoint: `/nudge`
+   * Method: `POST`
+   * Description: Create a new nudge for an event
+   * Payload: Same as the object model above except the `_id`
+   * Response: ID of the created nudge or an error
+
+2. **Get Nudge**
+   * Endpoint: `/nudge/:id`
+   * Method: `GET`
+   * Description: Retrieve details of a specific nudge by its ID.
+   * Payload: None
+   * Response: Same as the object model above or an error
+
+3. **Update Nudge**
+   * Endpoint: `/nudge/:id`
+   * Method: `PUT`
+   * Description: Update an existing nudge by its ID.
+   * Payload: Same as the Create Nudge payload
+   * Response: Message as "Nudge updated successfully" or an error
+
+4. **Delete Nudge**
+   * Endpoint: `/nudge/:id`
+   * Method: `DELETE`
+   * Description: Delete a nudge by its ID.
+   * Payload: None
+   * Response: Message as "Nudge deleted successfully" or an error
+
   
-# CRUD FUNCTIONALITIES
+### CRUD FUNCTIONALITIES
   
 * **Create**: Use the POST /nudges endpoint to create a new nudge associated with an event.   
 * **Read**: Use the GET /nudges/:id to retrieve a specific nudge  
