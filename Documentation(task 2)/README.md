@@ -16,7 +16,7 @@
   "icon": "string",              // Icon for the minimized nudge view
   "invitation": "string"         // One-line invitation message
 }
-  
+```    
 **API DOCUMENTATION**  
 Base url : http://localhost:3000/apiendpoint
   
